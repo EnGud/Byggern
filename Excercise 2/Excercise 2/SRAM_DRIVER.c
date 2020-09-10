@@ -10,22 +10,13 @@ MCUCR |= (1<<SRE);
 
 
 int SRAM_WRITE (uint16_t adress, char data){
-	if ( (adress > 0x1FF) || (adress < 0x1800) ){   // checks if data is within limits
-		printf("Error! Adress not within pre-defined limits. See manual to find the pre-defined limits.");
-		return 1;
-	}
-
 volatile char* external_ram = 0x1800;
 external_ram[adress] = data;
-	return 0;
 }
 
 char SRAM_READ(char adress){
-	if ( (adress > 0x1FF) || (adress < 0x1800) ){
-		printf("Error! Adress not within pre-defined limits. See manual to find the pre-defined limits.");
-	return 1;
-	}
-	volatile char* external_ram;
+
+	volatile char* external_ram = 0x1800;
 	return external_ram[adress];
 }
 
