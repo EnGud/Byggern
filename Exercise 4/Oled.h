@@ -1,20 +1,31 @@
-void oled_init(){}
-	
-void oled_reset(){}
+/*
+ * Oled.h
+ *
+ * Created: 08.10.2020 10:08:26
+ *  Author: harasa
+ */ 
+#ifndef OLED_H_
+#define OLED_H_
+#include <avr/pgmspace.h>
+#include <avr/io.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-void oled_home(){}
+void oled_init(void);
 
-void oled_goto_line(int line){}
+void oled_reset(void);
 
-void oled_goto_column(int column){}
+void oled_write(char input);
 
-void oled_clear_line(line){}
+void oled_print(char *symbol);
 
-void oled_pos(int row, int column){}
+void oled_home(void);
 
-void oled_print(char*){}
-	
-	void oled_write(){}
+void oled_goto_line(uint8_t line);
 
-	void oled_brightness(){}
-	
+void oled_clear_line(uint8_t line);
+
+void oled_pos(uint8_t line, uint8_t column);
+
+
+#endif
