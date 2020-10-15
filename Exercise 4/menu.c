@@ -82,11 +82,11 @@ void hierarcy(struct menus *child, struct menus *parentname, int(* function)()){
 
 
 
-void menuNavigation(struct menus *CurrentMenu ,int JoystickDirectionY, int MenuPosition{
+void MenuCurrent(struct menus *CurrentMenu ,int JoystickDirectionY, int MenuPosition){
 
 
 
-    if(JoystickDirectionY == 1){
+    if(JoystickDirectionY == "RIGHT"){
         *CurrentMenu = *CurrentMenu->Children[MenuPosition];
         oled_clear();
         oled_print(&CurrentMenu);
@@ -95,7 +95,7 @@ void menuNavigation(struct menus *CurrentMenu ,int JoystickDirectionY, int MenuP
     elseif((JoystickDirection == 1) & (*CurrentMenu->Children[MenuPosition]->fp != NULL!)){
         
     }  
-    elseif (JoystickDirectionY == -1){
+    elseif (JoystickDirectionY == "LEFT"){
         *CurrentMenu = *CurrentMenu->parent;
         oled_clear();
         oled_print(&CurrentMenu);
@@ -103,6 +103,7 @@ void menuNavigation(struct menus *CurrentMenu ,int JoystickDirectionY, int MenuP
         }
     else{
     }
+}
 //hvilken meny 
 
 
