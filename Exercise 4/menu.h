@@ -12,13 +12,13 @@
 #include <util/delay.h>
 #include <string.h>
 
-struct menuitem{
+struct menus{
 		char * title;
 		struct menuitem * parent;
 		struct menuitem * children[8];
 		int(*fp)();
 		int numofchildren;	
-	}mainmenu,newgame,settings,highscore, about, calibration,pid,modeselectm misc currentmenu;
+	}mainmenu,play,settings,hiscore, currentmenu;
 	
 
 
