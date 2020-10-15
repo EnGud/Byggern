@@ -82,7 +82,7 @@ void hierarcy(struct menus *child, struct menus *parentname, int(* function)()){
 
 
 
-void selmenu(struct menus *CurrentMenu ,int JoystickDirectionY, int MenuPosition){
+void selmenu(struct menus *CurrentMenu ,char JoystickDirectionY, int MenuPosition){
 
 
 
@@ -92,7 +92,7 @@ void selmenu(struct menus *CurrentMenu ,int JoystickDirectionY, int MenuPosition
         printmenutoscreen(&CurrentMenu);
         printcursor(MenuPosition+1, 2);
         }
-    elseif((JoystickDirection == 1) & (*CurrentMenu->Children[MenuPosition]->fp != NULL!)){
+    elseif((JoystickDirection == "RIGHT") & (*CurrentMenu->Children[MenuPosition]->fp != NULL!)){
         
     }  
     elseif (JoystickDirectionY == "LEFT"){
