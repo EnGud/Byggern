@@ -82,7 +82,7 @@ void hierarcy(struct menus *child, struct menus *parentname, int(* function)()){
 
 
 
-void MenuCurrent(struct menus *CurrentMenu ,int JoystickDirectionY, int MenuPosition){
+void selmenu(struct menus *CurrentMenu ,int JoystickDirectionY, int MenuPosition){
 
 
 
