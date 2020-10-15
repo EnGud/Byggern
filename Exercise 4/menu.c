@@ -70,20 +70,39 @@ void hierarcy(struct menus *child, struct menus *parentname, int(* function)()){
 */
 /*
 		
-2	/	  ¤	¤ ¤
-3	 ¸,.·'|'|'|·.,¸
-4	;'·.,¸¸¸¸¸¸,.·';
+2	/	  Â¤	Â¤ Â¤
+3	 Â¸,.Â·'|'|'|Â·.,Â¸
+4	;'Â·.,Â¸Â¸Â¸Â¸Â¸Â¸,.Â·';
 5	;  U got Cake? ;
 6	;	    ;)     ;
-7	 '·.,¸¸¸¸¸¸,.·'
+7	 'Â·.,Â¸Â¸Â¸Â¸Â¸Â¸,.Â·'
 8	  +47 95486881
 0	text: i do indeed ;)
 */
 
 
 
-void setmenu(int a, int b)
-{
+void menuNavigation(struct menus *CurrentMenu ,int JoystickDirectionY, int MenuPosition{
+
+
+
+    if(JoystickDirectionY == 1){
+        *CurrentMenu = *CurrentMenu->Children[MenuPosition];
+        oled_clear();
+        oled_print(&CurrentMenu);
+        printcursor(MenuPosition+1, 2);
+        }
+    elseif((JoystickDirection == 1) & (*CurrentMenu->Children[MenuPosition]->fp != NULL!)){
+        
+    }  
+    elseif (JoystickDirectionY == -1){
+        *CurrentMenu = *CurrentMenu->parent;
+        oled_clear();
+        oled_print(&CurrentMenu);
+        printcursor(MenuPosition+1, 2);
+        }
+    else{
+    }
 //hvilken meny 
 
 
