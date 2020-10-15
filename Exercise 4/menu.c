@@ -92,7 +92,7 @@ void selmenu(struct menus *CurrentMenu ,char JoystickDirectionY, int MenuPositio
         printmenutoscreen(&CurrentMenu);
         printcursor(MenuPosition+1, 2);
         }
-    elseif((JoystickDirection == "RIGHT") & (*CurrentMenu->Children[MenuPosition]->fp != NULL!)){
+    elseif((JoystickDirection == "RIGHT") & (*CurrentMenu->Children[MenuPosition]->fp != NULL)){
         
     }  
     elseif (JoystickDirectionY == "LEFT"){
