@@ -92,7 +92,7 @@ void MenuCurrent(struct menus *CurrentMenu ,int JoystickDirectionY, int MenuPosi
         oled_print(&CurrentMenu);
         printcursor(MenuPosition+1, 2);
         }
-    elseif((JoystickDirection == 1) & (*CurrentMenu->Children[MenuPosition]->fp != NULL!)){
+    elseif((JoystickDirection == "RIGHT") & (*CurrentMenu->Children[MenuPosition]->fp != NULL!)){
         
     }  
     elseif (JoystickDirectionY == "LEFT"){
