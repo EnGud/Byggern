@@ -124,7 +124,7 @@ int main(void)
 	joystick_init();
 	joystick_calibrate();
 
-	joystickposition joy_pos;
+	/*joystickposition joy_pos;
 	oled_reset();
 	oled_pos(0,1);
 	oled_print("harald's");
@@ -156,4 +156,13 @@ int main(void)
 		
 	//printf("doubling money in wildy bring bank");
 	}
+	*/
+	while(1){
+		
+		
+		
+		
+		
+	}
+		
 }

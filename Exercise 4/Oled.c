@@ -80,6 +80,17 @@ void oled_clear_line(uint8_t line){
 		*OLED_Data = 0x00;
 	}
 }
+void oled_clearcol()
+{
+	for(uint8_t j=0; j<8; j++){
+		oled_pos(j, 0);
+		
+		for (int i = 0; i < FONTWIDTH*2; i++){
+			*OLED_Data = 0x00;
+		}
+	}
+
+}
 
 void oled_pos(uint8_t line, uint8_t column){
 	oled_goto_line(line);

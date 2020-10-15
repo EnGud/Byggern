@@ -27,5 +27,6 @@ void oled_clear_line(uint8_t line);
 
 void oled_pos(uint8_t line, uint8_t column);
 
+void oled_clearcol()
 
 #endif
