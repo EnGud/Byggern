@@ -1,5 +1,7 @@
 #include "mcp2515.h"
 #include <stdint.h> //trengs ikke i Atmel, fordi VSC er retard????
+#include "UART.h"
+#include "SPI.h"
 
 
 
