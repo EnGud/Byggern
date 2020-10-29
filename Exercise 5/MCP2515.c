@@ -7,7 +7,7 @@
 
 uint8_t  mcp2515_init (){ //copied from slides
     uint8_t  value;
- SPI_init (); //  Initialize  SPI
+ SPI_init(); //  Initialize  SPI
  SPI_SLAVE_EN(1);
 
  mcp2515_reset (); // Send  reset -command
@@ -63,10 +63,14 @@ void mcp2515_request_to_send(int TransmitChannel, int HIGHORLOW){
 
 
 
-void mcp2515_bit_modify(){
+void mcp2515_bit_modify(uint8_t Address, uint8_t mask, uint8_t Data){
  SPI_SLAVE_EN(1);
 
- SPI_Write();
+ SPI_Write(MCP_BITMOD);
+ SPI_Write(Address);
+ SPI_Write(mask);
+ SPI_WRITE(Data);
+
 
  SPI_SLAVE_EN(0);
 

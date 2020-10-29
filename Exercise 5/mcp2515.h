@@ -154,11 +154,14 @@ Copyright 2003 Kimberly Otten Software Consulting
 #define MCP_WAKIF		0x40
 #define MCP_MERRF		0x80
 
+#include <stdint.h> 
+
+
 uint8_t  mcp2515_init ();
 uint8_t  mcp2515_read(uint8_t address);
 int mcp2515_write(uint8_t Adress, uint8_t Data);
 void mcp2515_request_to_send(int TransmitChannel, int HIGHORLOW);
-void mcp2515_bit_modify();
+void mcp2515_bit_modify(uint8_t Address, uint8_t mask, uint8_t Data)
 void mcp2515_reset();
 int mcp2515_read_status();
 
