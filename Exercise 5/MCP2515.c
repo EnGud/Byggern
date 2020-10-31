@@ -59,7 +59,7 @@ int mcp2515_write(uint8_t Adress, uint8_t Data){
 void mcp2515_request_to_send(int TransmitChannel, int HIGHORLOW){
  SPI_SLAVE_EN(1);
 
- mcp2515_write(TransmitChannel, HIGHORLOW);
+mcp2515_bit_modify(MCP_TXB0CTRL, 0b00001000, 0b00001000);
 
  SPI_SLAVE_EN(0);
 }
