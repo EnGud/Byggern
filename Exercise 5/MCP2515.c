@@ -12,6 +12,7 @@ uint8_t  mcp2515_init (){ //copied from slides
  SPI_init(); //  Initialize  SPI
  SPI_SLAVE_EN(1);
 
+ mcp2515_set_mode(MODE_NORMAL);
  mcp2515_reset (); // Send  reset -command
 
  // Self -test
@@ -78,7 +79,15 @@ void mcp2515_bit_modify(uint8_t Address, uint8_t mask, uint8_t Data){
 
 }
 
-
+int mcp2515_set_mode(uint8_t mode){
+ 
+ 
+ 
+ mcp2515_bit_modify(MCP_CANCTRL, 0b11101110, mode | 0b1100);
+ mcp2515_bit_modify(MCP_CANINTE, 0b11111111, 0b1);
+ mcp2515_bit_modify(MCP_RXB0CTRL, 0b01100000);
+   return 0;
+}
 
 void mcp2515_reset(){
  SPI_SLAVE_EN(1);
