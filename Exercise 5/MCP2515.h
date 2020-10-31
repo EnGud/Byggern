@@ -164,5 +164,6 @@ void mcp2515_request_to_send(int TransmitChannel, int HIGHORLOW);
 void mcp2515_bit_modify(uint8_t Address, uint8_t mask, uint8_t Data);
 void mcp2515_reset();
 int mcp2515_read_status();
-
+int mcp2515_set_mode(uint8_t mode)
+  
 #endif
