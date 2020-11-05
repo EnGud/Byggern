@@ -22,4 +22,4 @@ This section is dedicated to honour our fallen comrades, who lost their lives du
 * Kjell Olav Nielsen (Was stung by a pin, died of tetanus)
 * Petter Volthaug (Never showed up, probably run over by AtB)
 * Gunnar Sæthersberg (Died in a shootout with the student assistants after arguing against their choice to fail the group)
-* Harald Sæther (Revealed to be the wrong Harald Sæther, lives in Gjøvik)
+* Harald Sæther (Revealed to be the wrong Harald Sæther, lives in Ålesund)
