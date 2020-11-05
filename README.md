@@ -14,8 +14,8 @@ Følgende personer er ansvarlig for både rotete kode og system:
 
 
 To honour our fallen comrades, who lost their lives during the project:
-Ole Martin Skogsvoll (Died due to electrocution)
-Kjell Olav Nielsen (Was stung by a pin, died of tetanus)
-Petter Volnhaug (Never showed up, probably run over by AtB)
-Gunnar Sæthersberg (Died in a shootout with the student assistants after arguing against their choice to fail the group)
-Harald Sæther (Revealed to be the wrong Harald Sæther, lives in Gjøvik)
+* Ole Martin Skogsvoll (Died due to electrocution)
+* Kjell Olav Nielsen (Was stung by a pin, died of tetanus)
+* Petter Volthaug (Never showed up, probably run over by AtB)
+* Gunnar Sæthersberg (Died in a shootout with the student assistants after arguing against their choice to fail the group)
+* Harald Sæther (Revealed to be the wrong Harald Sæther, lives in Gjøvik)
