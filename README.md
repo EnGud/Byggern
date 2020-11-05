@@ -13,7 +13,11 @@ Følgende personer er ansvarlig for både rotete kode og system:
 
 
 
-To honour our fallen comrades, who lost their lives during the project:
+
+
+
+This section is dedicated to honour our fallen comrades, who lost their lives during the project:
+
 * Ole Martin Skogsvoll (Died due to electrocution)
 * Kjell Olav Nielsen (Was stung by a pin, died of tetanus)
 * Petter Volthaug (Never showed up, probably run over by AtB)
