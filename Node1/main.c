@@ -204,9 +204,12 @@ int main(void)
 	
 	can_init();								//initialize the can
 	
+	joystick_init();
+	joystick_calibrate();
+	joystickposition joy_pos;
 	can_message message;					//structs for holding the values
 	can_message RX_message;					//--------- || -----------
-	message.id = 2;
+	message.id = 1;
 	message.length = 7;
 	message.data[0] = 3;
 	message.data[1] = 1;
@@ -219,7 +222,7 @@ int main(void)
 	//can_send(&message);
 	printf("%d",RX_message.id);
 	
-	char l;
+	uint8_t x1,y1;
 	//SPI_init();
 	while(1)
 	{	
@@ -231,12 +234,20 @@ int main(void)
 		}
 		_delay_ms(30);
 		*/
+		joy_pos=joystickgetpos();
+		x1=joy_pos.x+100;
+		y1=joy_pos.y+100;
+		
+		
+		message.data[0]=x1;
+		message.data[1]=y1;
 		can_send(&message);
-		CAN_recieve(&RX_message);
-		l=RX_message.data[0];
+		
+		//CAN_recieve(&RX_message);
+		//l=RX_message.data[0];
 		//printf("%d\n",RX_message.data[0]);
-		_delay_ms(1000);
-		printf("%d , %d %d %d %d %d %d \n",RX_message.data[0],RX_message.data[1],RX_message.data[2],RX_message.data[3],RX_message.data[4],RX_message.data[5],RX_message.data[6],RX_message.data[7]);
+		//_delay_ms(1000);
+		//printf("%d , %d %d %d %d %d %d \n",RX_message.data[0],RX_message.data[1],RX_message.data[2],RX_message.data[3],RX_message.data[4],RX_message.data[5],RX_message.data[6],RX_message.data[7]);
 		
 	}
 		

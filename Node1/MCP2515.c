@@ -29,14 +29,17 @@ uint8_t  mcp2515_init (){ //copied from slides
 	}
 	printf("do");
 	SPI_SLAVE_EN(1);
+	mcp2515_bit_modify(MCP_CNF3,0x01,0x01);
+	mcp2515_bit_modify(MCP_CNF2,0xb5,0xb5);
+	mcp2515_bit_modify(MCP_CNF1,0x43,0x43);
 	//mcp2515_bit_modify(MCP_CANCTRL,MODE_MASK, MODE_LOOPBACK);
-	mcp2515_bit_modify(MCP_CANCTRL, 0b11101110, MODE_LOOPBACK | 0b1100);
+	mcp2515_bit_modify(MCP_CANCTRL, 0b11101110, MODE_NORMAL | 0b1100);
 	mcp2515_bit_modify(MCP_RXB0CTRL,0b01100000,0b01100000);
 	SPI_SLAVE_EN(0);
 	//mcp2515_bit_modify(MCP_CANCTRL,MODE_MASK,MODE_LOOPBACK);
 	value = mcp2515_read(MCP_CANSTAT);
 	
-	if ((value & MODE_MASK)  !=  MODE_LOOPBACK) {
+	if ((value & MODE_MASK)  !=  MODE_NORMAL) {
 		printf("MCP2515  after  reset!\n");
 		return  1;
 	}
