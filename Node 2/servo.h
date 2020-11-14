@@ -18,6 +18,7 @@
 #define SERVO_TEST_DELAY  2000
 
 
+void initTimer1(void);
 
 
 
