@@ -3,8 +3,6 @@ Dette er BYGGERN!
 
 Throw the first stone, he who has not koked.
 
-Biden4Prezz
-
 Følgende personer er ansvarlig for både rotete kode og system:
 
 * International Senior Official CEO President-in-chief Commander Chairman: **Harald Sæther** 
