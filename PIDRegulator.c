@@ -18,9 +18,9 @@ DATATYPE integralPrior = 0; // Memory for integral
 DATATYPE bias = 0;	// General bias
 
 // these values must be variated for a given control jobb
-DATATYPE pGain = 0.5; //KP (simple gain)
+DATATYPE pGain = 0; //KP (simple gain)
 DATATYPE IGain = 4;	  //Integration 
-DATATYPE DGain = 0;	  //Derivative
+DATATYPE DGain = 0.01;	  //Derivative
 DATATYPE timeValue = 0.1; // The time constant which affects the integration and derivation time.
 
 // These are the values we wish to hit and the current values.
