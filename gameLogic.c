@@ -32,7 +32,7 @@ int checkIfAlive(int maxScoreVariable, int IRValue, int IRThreshold) {
 			oled_print("You have scored, and have %d points: \n", score);
 			if (score >= maxScoreVariable) {
 				oled_print("You have won, thanks for playing with us :-)!");
-				return 0;
+				return 1;
 			}
 		}
 	}
