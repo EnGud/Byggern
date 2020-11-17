@@ -6,6 +6,7 @@
 #include "oled.h"
 #include "CAN.h"
 #include <util/delay.h>
+#include "gameLogic.h"
 
 void setup(void){}
 
