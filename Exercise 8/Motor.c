@@ -1,15 +1,17 @@
 #include "Motor.h"
 #include "Encoder.h"
+//#include "PIDRegulator.h"
 
 #define OutputEnable PD0
 #define Reset PD1
 #define Select PD2
 #define Enable PD9
 #define MotorDirection PD10
+//#
 
 int ActualSpeed;
 
-
+//pidRegulator(target, measure);
 
 
 void Motor_init(){
