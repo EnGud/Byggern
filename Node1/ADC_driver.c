@@ -1,6 +1,7 @@
 /*
  * ADC_driver.c
  *
+ This code enables communication with the ADC by setting the correct registers and timers. It enables reading of the ADC.
  * Created: 17.09.2020 11:38:49
  *  Author: harasa
  */ 
