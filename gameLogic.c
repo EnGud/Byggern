@@ -29,9 +29,9 @@ int checkIfAlive(int maxScoreVariable) {
 			while (checkifIRBreaks(2,1)) {
 			}
 			score++;
-			printf("You have scored, and have %d points: \n", score);
+			oled_print("You have scored, and have %d points: \n", score);
 			if (score >= maxScore) {
-				printf("You have won, thanks for playing with us :-)!");
+				oled_print("You have won, thanks for playing with us :-)!");
 				return 0;
 			}
 		}
