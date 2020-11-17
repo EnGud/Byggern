@@ -10,25 +10,32 @@
 
 void setup(void){}
 
+bool Game = False;
 int Score = 0;
 int IRThreshold = 5;
-  
+int FirstTimeStart = 0;
+
+
 void main(void){
 //The main function for actually running the game. This function will loop for as long as score remains under 5. 
   void PlayGame(void){
+  if(FirstTimeStart == 0)
+    Game = True;
+    FirstTimeStart++;
+  }
     while(Game=="True"){
-      can_send(joystick);
-      can_send(motor_pos);
+      can_send(joystick);   //
+      can_send(motor_pos);   //
+      can_send(servo);      // These three needs proper setup!!!!!!
       
       int IR_Status = can_receive(ir_status); //receives data from node 2 about IR status. ir_status is a struct. Needs fixing!
       
-      int checkIfAlive(int maxScoreVariable, int IR_Status, int IRThreshold);
-          }
-      
+     int gamestatus = checkIfAlive(int maxScoreVariable, int IR_Status, int IRThreshold);
+      if(gamestatus == 1){
+        Game == "False"
+        FirstTimeStart = 0;
       }
-        
     }
-  }
   //a simple function to show the latest live high-score on the screen. This resets when the system resets.
   void ShowHighScore(void){
 
