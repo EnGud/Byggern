@@ -1,3 +1,7 @@
+/*
+The inner workings of the game. Simple as.
+
+*/
 #include <stdio.h>
 #define numberOfDebounce 3
 #define maxScore 5
