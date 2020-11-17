@@ -26,9 +26,9 @@ void menu_init(void)
 	
 
 	
-	hierarcy(&play,&mainmenu,NULL);
+	hierarcy(&play,&mainmenu,&PlayGame);
 	hierarcy(&settings,&mainmenu,NULL);
-	hierarcy(&hiscore,&mainmenu,NULL);
+	hierarcy(&hiscore,&mainmenu,&ShowHighScore);
 	
 	hierarcy(&dummy,&hiscore,NULL);
 	hierarcy(&dummy,&settings,&cakefunc);
@@ -76,12 +76,12 @@ void hierarcy(struct menus * child, struct menus * parentname, void (* function)
 */
 /*
 		
-2	/	  ¤	¤ ¤
-3	 ¸,.·'|'|'|·.,¸
-4	;'·.,¸¸¸¸¸¸,.·';
+2	/	  Â¤	Â¤ Â¤
+3	 Â¸,.Â·'|'|'|Â·.,Â¸
+4	;'Â·.,Â¸Â¸Â¸Â¸Â¸Â¸,.Â·';
 5	;  U got Cake? ;
 6	;	    ;)     ;
-7	 '·.,¸¸¸¸¸¸,.·'
+7	 'Â·.,Â¸Â¸Â¸Â¸Â¸Â¸,.Â·'
 8	  +47 95486881
 0	text: i do indeed ;)
 */
