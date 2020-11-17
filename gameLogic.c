@@ -30,7 +30,7 @@ int checkIfAlive(int maxScoreVariable) {
 			}
 			score++;
 			oled_print("You have scored, and have %d points: \n", score);
-			if (score >= maxScore) {
+			if (score >= maxScoreVariable) {
 				oled_print("You have won, thanks for playing with us :-)!");
 				return 0;
 			}
