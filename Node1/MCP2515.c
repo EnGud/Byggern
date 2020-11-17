@@ -1,6 +1,6 @@
 /*
  * MCP2515.c
- *
+ *Setup of the MCP2515 CAN controller, by setting the correct registers and the correct UART speed. Enables reading and writing to controller, used in other libraries.
  * Created: 29.10.2020 12:28:17
  *  Author: harasa
  */ 
