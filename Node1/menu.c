@@ -10,7 +10,7 @@
 #include "menu.h"
 #include "game.h"
 #include <util/delay.h>
-
+#include "game.c"
 
 void menu_init(void)
 {
