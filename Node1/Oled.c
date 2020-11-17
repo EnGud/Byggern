@@ -1,3 +1,9 @@
+/*
+
+Enables writing to the OLED_Display.Includes functions to write, clear and reset, go to home and go to specific line.
+
+*/
+
 #include "fonts.h"
 #include "Oled.h"
 #define FONTWIDTH 8
@@ -28,7 +34,7 @@ void oled_write(char input){
 	}
 }
 
-void oled_print(char *symbol){ //printer symbol til oled ved å bruke.
+void oled_print(char *symbol){ //printer symbol til oled ved Ã¥ bruke.
 	int i = 0;
 
 	while(symbol[i] != '\0'){
