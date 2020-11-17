@@ -1,3 +1,7 @@
+/*
+Enables the ATMega to use the SRAM as external memory.
+*/
+
 #include <avr/io.h>
 #include <stdio.h>
 #include <stdlib.h>
