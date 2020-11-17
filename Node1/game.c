@@ -5,7 +5,7 @@
 #include <avr/io.h>
 #include "oled.h"
 #include "CAN.h"
-
+#include <util/delay.h>
 
 void setup(void){}
 
@@ -21,10 +21,12 @@ void main(void){
   }
   //a simple function to show the latest live high-score on the screen. This resets when the system resets.
   void ShowHighScore(void){
-    CAN_recieve(score_variable);?
+    CAN_recieve(score_variable); 
       
-      char ScoreAsChar = score_variable + '0'
-    oled_print(ScoreAsChar)
+      char ScoreAsChar = score_variable + '0';
+    oled_print(ScoreAsChar);
+      delay_ms_(2000);
+    return 0
   }
 
 }
