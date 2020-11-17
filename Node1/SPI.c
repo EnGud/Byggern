@@ -1,6 +1,6 @@
 /*
  * SPI.c
- *
+ *Enables Serial Peripheral Interface communication, used by CAN.
  * Created: 29.10.2020 10:24:19
  *  Author: harasa
  */
