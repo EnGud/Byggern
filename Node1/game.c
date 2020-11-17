@@ -1,8 +1,11 @@
+//this system is a WIP
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <avr/io.h>
 #include "oled.h"
 #include "CAN.h"
+
 
 void setup(void){}
 
