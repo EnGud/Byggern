@@ -1,6 +1,6 @@
 /*
  * joystickdriver.c
- *
+ *Collects the position of the joystick
  * Created: 17.09.2020 13:02:53
  *  Author: harasa
  */ 
