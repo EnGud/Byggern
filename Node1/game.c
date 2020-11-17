@@ -19,6 +19,7 @@ int FirstTimeStart = 0;
 void main(void){
 //The main function for actually running the game. This function will loop for as long as score remains under 5. 
   void PlayGame(void){
+    //Initial check to see if game should start
   if(FirstTimeStart == 0)
     Game = True;
     FirstTimeStart++;
@@ -33,16 +34,15 @@ void main(void){
      int gamestatus = checkIfAlive(int maxScoreVariable, int IR_Status, int IRThreshold);
       if(gamestatus == 1){
         Game == "False"
-        FirstTimeStart = 0;
+        FirstTimeStart = 0;   //This is not a proper break! will still loop in game, instead of return to menu!
       }
     }
   //a simple function to show the latest live high-score on the screen. This resets when the system resets.
   void ShowHighScore(void){
-
-      char ScoreAsChar = score_variable + '0';
+    char ScoreAsChar = Score + '0';
     oled_print(ScoreAsChar);
-      delay_ms_(2000);
-    return 0
+    delay_ms_(2000);
+    return
   }
 
 }
