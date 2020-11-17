@@ -23,7 +23,7 @@ int checkifIRBreaks(int IRValue, int IRThreshold) {
 	}
 }
 
-int checkIfAlive(int maxScoreVariable) {
+int checkIfAlive(int maxScoreVariable, int IRValue, int IRThreshold) {
 	for (;;) {
 		while (score < maxScoreVariable) {
 			while (checkifIRBreaks(2,1)) {
