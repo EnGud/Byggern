@@ -1,3 +1,6 @@
+/*
+Enables The ATMega to use UART communication.
+*/
 #include <avr/io.h>
 #include <stdio.h>
 #include "UART.h"
