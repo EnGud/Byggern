@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include "Oled.h"
 #include "menu.h"
+#include "game.h"
 #include <util/delay.h>
 
 
