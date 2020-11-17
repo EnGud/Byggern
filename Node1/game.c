@@ -19,7 +19,9 @@ void main(void){
   //a simple function to show the latest live high-score on the screen. This resets when the system resets.
   void ShowHighScore(void){
     CAN_recieve(score_variable);?
-    oled_print(
+      
+      char ScoreAsChar = score_variable + '0'
+    oled_print(ScoreAsChar)
   }
 
 }
