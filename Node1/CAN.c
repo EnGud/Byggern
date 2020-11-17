@@ -1,6 +1,7 @@
 /*
  * CAN.c
  *
+ Enables sending and receiving CAN-data for ATMEGA. The correct registers are set during init.
  * Created: 29.10.2020 15:11:03
  *  Author: harasa
  */ 
