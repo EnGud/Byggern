@@ -1,7 +1,4 @@
 # (Coop Bygg)ern
-Dette er BYGGERN!
-
-Throw the first stone, he who has not koked.
 
 Følgende personer er ansvarlig for både rotete kode og system:
 
